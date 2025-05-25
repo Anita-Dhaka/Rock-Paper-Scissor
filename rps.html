@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissor</title>
+    <style>
+        .container{
+            background-color: #333;
+            color: white;
+            font-size: 20px;
+            width: 500px;
+            height: max-content;
+            text-align: center;
+            margin-left: 500px;
+            padding: 20px;
+        }
+        details{
+            background-color: white;
+            color: black;
+            border: 2px solid rgb(201, 201, 20);
+            border-radius: 20px;
+            align-content: center;
+        }
+        ul{
+            list-style: none;
+        }
+        #score{
+            margin-top: 20px;
+        }
+        button{
+            background-color: rgb(201, 201, 20);
+            font: inherit;
+            margin: 0 20px 0 20px;
+            width: 100px;
+            border: none;
+        }
+        #score{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #result{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #play-again{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Let's play Rock, Paper, Scissors!</h1>
+        <details>
+            <summary>Rules to the game</summary>
+            <div>
+                <span>You will be playing against tthe computer.</span>
+                <span>You can choose between Rock, Paper, and Scissors.</span>
+                <span>The first one to three points wins.</span>
+                <span>Here are the rules to getting a point in the game:</span>
+                <ul>
+                    <li>Rock beats Scissors</li>
+                    <li>Scissors beats Paper</li>
+                    <li>Paper beats Rock</li>
+                </ul>
+                <p>If the player and computer choose the same option, then no one gets the point.</p>
+            </div>
+        </details>
+        <div id="score"></div>
+        <h2>Choose an option:</h2>
+        <div id="options">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissor">Scissors</button>
+        </div>
+        <div id="result"></div>
+        <div id="winner"></div>
+    </div>
+    <script src="rps.js"></script>
+</body>
+</html>
